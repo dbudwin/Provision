@@ -1,3 +1,0 @@
-alias hf='history | grep --color=auto $1'
-alias ls='ls -lah'
-alias reload='source ~/.bashrc'
