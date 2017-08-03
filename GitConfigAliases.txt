@@ -7,7 +7,7 @@
     cof = commit --fixup
     com = checkout master
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    pushfwl = !git push --force-with-lease origin
+    pushfwl = !git push --force-with-lease origin `git rev-parse --abbrev-ref HEAD`
     raze = !git reset --hard HEAD && git clean -dfx
     st = status -sb
     um = !git checkout master && git pull upstream master
